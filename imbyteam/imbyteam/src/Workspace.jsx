@@ -2632,10 +2632,7 @@ function HomeView({ upcoming, onEvent, team, working, myTodayMinutes, myTodayMs,
   }
   const greeting = buildGreeting();
   // 지난주의 나 — 근무한 날의 일평균
-  const myWeek = WEEK_MINUTES["주"] || [];
-  const myWorkedDays = myWeek.filter((m) => m > 0);
-  const lastWeekAvg = myWorkedDays.length ? Math.round(myWorkedDays.reduce((s, m) => s + m, 0) / myWorkedDays.length) : 0;
-  const cmpMax = Math.max(myTodayMinutes, teamAvg, lastWeekAvg, 60);
+  const lastWeekAvg = 0;
 
   /* ─── AI 브리핑 텍스트 생성 (규칙 기반, 실시간 반영) ─── */
   const urgentIssues = myIssues.filter((i) => i.priority >= 3 || i.status === "progress");
