@@ -1,4 +1,4 @@
-# 틈 — IMBY Team
+# IMBY Team
 
 ## 시작하기
 
